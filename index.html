@@ -33,10 +33,9 @@
             <p>Una aplicación que muestra batallas históricas que ocurrieron en la fecha actual, biografías de personajes, hechos relevantes de la historia así como tecnologías orientadas a la guerra a través de audios.</p>
 
             <!-- Imagen con audio -->
-            <img src="img/img_Portada_Today.jpg" alt="Captura de la app Android Portada" width="300" onclick="reproducirAudio()">
-            
+            <img src="img/img_Portada_Today.jpg" alt="Captura de la app Android Portada" width="300">           
             <img src="img/img_batalla.jpg" alt="Captura de la app Android Batalla" width="300">
-            <img src="img/img_Napo.jpg" alt="Captura de la app Android Napo" width="300">
+            <img src="img/img_Napo.jpg" alt="Captura de la app Android Napo" width="300"  onclick="reproducirAudio()">
         </article>
 
         <article>
@@ -58,7 +57,7 @@
     <!-- Aquí va el script justo antes del cierre de body -->
     <script>
         function reproducirAudio() {
-            const audio = new Audio('https://www2.cs.uic.edu/~i101/SoundFiles/StarWars3.wav');
+            const audio = new Audio('https://laifelstudio.com/assets/audios/AudiosDiarios/P_13.mp3');
             audio.play();
         }
     </script>
