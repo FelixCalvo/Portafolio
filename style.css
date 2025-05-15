@@ -21,6 +21,30 @@ header {
     text-align: center;
 }
 
+.hamburguesa {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.titulo{
+  flex: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.head_linea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  position: relative;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -64,26 +88,47 @@ footer {
 
 .contenedor-centrar-imagen {
   display: flex;
-  /* vertical-align: top; */
   margin: 0 10px;
   height: auto;
 }
 
 @media screen and (max-width: 600px) {
-  .contenedor-centrar-imagen {
+
+.hamburguesa {
+  display: block;
+}
+
+nav ul {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  position: absolute;
+  top: 100%; 
+  right: 0;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul.activo {
+  display: flex;  
+}
+  
+.contenedor-centrar-imagen {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  .centrar_img {
-  display: block;
-  margin-top: 15px;
-  width: 100%;
 }
 
-  .contenedor-centrar-imagen img {
+.centrar_img {
+    display: block;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.contenedor-centrar-imagen img {
     width: 100%;
     margin-top: 15px;
   }
