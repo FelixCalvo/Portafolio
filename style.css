@@ -61,29 +61,22 @@ footer {
   margin: 0 auto;
 }
 
-.contenedor-imagenes img {
-  display: inline-block;
-  vertical-align: top;
+.contenedor-centrar-imagen {
+  display: flex;
+  /* vertical-align: top; */
   margin: 0 10px;
-  max-width: 100%;
   height: auto;
 }
 
-/* @media (max-width: 768px) {
-  .contenedor {
-    padding: 10px;
-  }
-} */
-
 @media screen and (max-width: 600px) {
-  .contenedor-imagenes img {
-    display: block;
-    margin: 10px auto;
-    width: 100%;
-    height: auto;
+  .contenedor-centrar-imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   img {
-    width: 260px;
+    width: 200px;
   }
 }
