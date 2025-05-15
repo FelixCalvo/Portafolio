@@ -8,73 +8,74 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Portafolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#prototipos">Prototipos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="contenedor">
+        <header>
+            <h1>Portafolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#prototipos">Prototipos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>Soy desarrollador Java con experiencia en la creación de aplicaciones móviles y prototipos de juegos de mesa digitalizados.</p>
-    </section>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Soy desarrollador Java con experiencia en la creación de aplicaciones móviles y prototipos de juegos de mesa digitalizados.</p>
+        </section>
 
-    <section id="proyectos">
-        <h2>Proyectos Destacados</h2>
+        <section id="proyectos">
+            <h2>Proyectos Destacados</h2>
 
-        <article>
-            <h3>Aplicación Android (Java)</h3>
-            <h4>Today in History</h4>
-            <p>Una aplicación que muestra batallas históricas que ocurrieron tal día como hoy, biografías de personajes o hechos relevantes a través de audios.</p>
-            <img src="img/img_Portada_Today.jpg" alt="Captura de la app Android Portada" width="300">           
-            <img src="img/img_batalla.jpg" alt="Captura de la app Android Batalla" width="300">
-            <img src="img/img_Napo.jpg" alt="Captura de la app Android Napo" width="300"  onclick="reproducirAudio()">
-        </article>
+            <article>
+                <h3>Aplicación Android (Java)</h3>
+                <h4>Today in History</h4>
+                <p>Una aplicación que muestra batallas históricas que ocurrieron tal día como hoy, biografías de personajes o hechos relevantes a través de audios.</p>
+                <img src="img/img_Portada_Today.jpg" alt="Captura de la app Android Portada" width="300">           
+                <img src="img/img_batalla.jpg" alt="Captura de la app Android Batalla" width="300">
+                <img src="img/img_Napo.jpg" alt="Captura de la app Android Napo" width="300"  onclick="reproducirAudio()">
+            </article>
 
-        <article>
-            <h3>Aplicación Escritorio (Java)</h3>
-            <h4>Ekonos</h4>
-            <p>Unn prograama de simulación economica referente a empresas y bolsa simulando la expansión y contracción industrial.</p>
-            <img src="img/img_mapaEkonos.png" alt="Captura de juego Ekonos" width="300">           
-        </article>
+            <article>
+                <h3>Aplicación Escritorio (Java)</h3>
+                <h4>Ekonos</h4>
+                <p>Un programa de simulación económica referente a empresas y bolsa simulando la expansión y contracción industrial.</p>
+                <img src="img/img_mapaEkonos.png" alt="Captura de juego Ekonos" width="300">           
+            </article>
+        </section>
 
-    </section>
+        <section id="prototipos">
+            <h2>Prototipos</h2>
 
-    <section id="prototipos">
-        <h2>Prototipos</h2>
+            <article>
+                <h3>Wargame (Java-JavaFX o Unreal Engine)</h3>
+                <h4>Hegemony</h4>
+                <p>Un futuro videojuego basado en Hegemony, un wargame (juego de mesa) que representa las dos primeras guerras Púnicas (Desde 264 a.C. a 201 a.C.)</p>
+                <img src="img/img_Server_Partidas.png" alt="Captura imagen jugadores hegemony" width="500">
+                <img src="img/img_pantallas_multiplayer_4.png" alt="Captura imagen jugadores hegemony" width="500">
+            </article>
 
-        <article>
-            <h3>Wargame (Java-JavaFX o Unreal Engine)</h3>
-            <h4>Hegemony</h4>
-            <p>Un futuro videojuego basado en Hegemony un wargame (juego de mesa) que representa las dos primeras guerras Púnicas (Desde 264 a.C. a 201 a.C.)</p>
-            <img src="img/img_Server_Partidas.png" alt="Captura imagen jugadores hegemony" width="500">
-            <img src="img/img_pantallas_multiplayer_4.png" alt="Captura imagen jugadores hegemony" width="500">
-        </article>
+            <article>
+                <h3>Aventura Narrativa / Investigación Mitos de Cthulhu (Unreal Engine)</h3>
+                <h4>La herencia</h4>
+                <p>Juego basado en los libros de los Mitos de Cthulhu escritos por Lovecraft.</p>
+                <p>Nota: Mapa generador edificios.</p>
+                <img src="img/img_map_arkham.gif" alt="Captura de Arkham de Mitos de Cthulhu" width="300">
+                <img src="img/img_map_arkham_2.jpg" alt="Captura de Arkham de Mitos de Cthulhu" width="300">
+            </article>
+        </section>
 
-        <article>
-            <h3>Aventura Narrativa / Investigación Mitos de Cthulhu (Unreal Engine)</h3>
-            <h4>La herencia</h4>
-            <p>Juego basado en los libros de los Mitos de Cthulhu escritos por Lovecraft.</p>
-            <p>Nota: Mapa generador edificios.</p>
-            <img src="img/img_map_arkham.gif" alt="Captura de arkha de Mitos de Cthulhu" width="300">
-            <img src="img/img_map_arkham_2.jpg" alt="Captura de arkha de Mitos de Cthulhu" width="300">
-        </article>
-    </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Para más información o consultas, puedes contactarme a través de mi correo electrónico: <a href="mailto:felix.calvo.diaz@gmail.com">felix.calvo.diaz@gmail.com</a></p>
+        </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Para más información o consultas, puedes contactarme a través de mi correo electrónico: <a href="mailto:felix.calvo.diaz@gmail.com">felix.calvo.diaz@gmail.com</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Félix Calvo. Todos los derechos reservados.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 Félix Calvo. Todos los derechos reservados.</p>
+        </footer>
+    </div>
 
     <script>
         function reproducirAudio() {
