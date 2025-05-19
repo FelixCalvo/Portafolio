@@ -89,15 +89,16 @@ footer {
     border-radius: 8px;
 }
 
-.centrar_img {
-  display: block;
-  margin: 0 auto;
-}
+ .centrar_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
 
 .contenedor-centrar-imagen {
   display: flex;
-  margin: 0 10px;
-  height: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -130,10 +131,18 @@ nav ul.activo {
     justify-content: center;
 }
 
-.centrar_img {
-    display: block;
-    margin-top: 15px;
+ .centrar_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+} 
+
+.centrar_img img {
+  max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Elimina espacios en blanco debajo de la imagen */
 }
 
 .contenedor-centrar-imagen img {
