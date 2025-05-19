@@ -101,6 +101,10 @@ footer {
   justify-content: center;
 }
 
+.contenedor-centrar-imagen img {
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 600px) {
 
 .hamburguesa {
